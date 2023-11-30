@@ -12,6 +12,9 @@ $container = new Container();
 $settings = require __DIR__ . '/../app/settings.php';
 $settings($container);
 
+$logger = require __DIR__ . '/../app/logger.php';
+$logger($container);
+
 // Set Container on app
 AppFactory::setContainer($container);
 
