@@ -22,28 +22,20 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": ">=7.1",
         "ext-PDO": "^7.4",
         "ext-json": "*",
         "ext-mysqli": "^7.4",
-        "monolog/monolog": "^2.8",
-        "php-di/php-di": "^6.4",
-        "slim/psr7": "^1.5",
-        "slim/slim": "^4.10",
+        "monolog/monolog": "^1.24",
+        "php-di/php-di": "^6.0",
+        "slim/psr7": "^0.5",
+        "slim/slim": "^4.1",
         "slim/twig-view": "^3.0"
     },
     "require-dev": {
-        "jangregor/phpstan-prophecy": "^1.0.0",
-        "phpspec/prophecy-phpunit": "^2.0",
-        "phpstan/extension-installer": "^1.2.0",
-        "phpstan/phpstan": "^1.8",
-        "phpunit/phpunit": "^9.5.26",
-        "squizlabs/php_codesniffer": "^3.7"
+        "phpunit/phpunit": "^7.5"
     },
     "config": {
-        "allow-plugins": {
-            "phpstan/extension-installer": true
-        },
         "process-timeout": 0,
         "sort-packages": true
     },

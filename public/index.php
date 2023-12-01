@@ -21,6 +21,9 @@ AppFactory::setContainer($container);
 // Create App
 $app = AppFactory::create();
 
+$views = require __DIR__ . '/../app/views.php';
+$views($app);
+
 $middleware = require __DIR__ . '/../app/middleware.php';
 $middleware($app);
 

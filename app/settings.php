@@ -16,7 +16,11 @@ return function(Container $container){
                 'name' => 'slim-app',
                 'path' => __DIR__ . '/../logs/app.log',
                 'level' => Logger::DEBUG,
-            ]
+            ],
+            'views' => [
+                'path' => __DIR__ . '/../src/Views',
+                'settings' => [ 'cache' => false],
+            ],
         ];
     });
 };
